@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+.container{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+img{
+    width: 50%;
+    margin-bottom: 0;
+}
+span{
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading p{
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+.heading h1{
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+.submit{
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+form{
+    width: 100%;
+    display: flex;
+}
+.input{
+    width: 90%;
+}
+input{
+    padding: 15px;
+    width: 80%;
+    margin-right: 20px;
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 30px;
+    margin-bottom: 0;
+}
+input::placeholder{
+    color: hsl(0, 0%, 59%);
+}
+.alert{
+    margin-top: 0;
+    font-size: 0.7rem;
+    color: hsl(354, 100%, 66%);
+    margin-left: 20px;
+}
+button{
+    padding: 15px;
+    width: 30%;
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    border-radius: 30px;
+    color: hsl(223, 100%, 88%);
+    height: 48px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.img img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.social-icons{
+    color: blue;
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+.fa{
+    border: 1px solid hsl(223, 100%, 88%);
+    padding: 10px;
+    border-radius: 50%;
+}
+.fa:hover{
+    background-color: hsl(223, 87%, 63%);
+    color: hsl(223, 100%, 88%);
+    cursor: pointer;
+}
+.fa-facebook{
+    width: 15px;
+}
+.footer{
+    font-size: 0.8rem;
+}
+
+@media (max-width:400px) {
+    .container{
+        width: 90%;
+    }
+    img{
+        width: 80%;
+    }
+    .heading h1{
+        font-size: 1.6rem;
+    }
+    .submit{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input{
+        width: 90%;
+    }
+    input{
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+        padding: 15px;
+    }
+    button{
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    form{
+        flex-direction: column;
+    }
+}
